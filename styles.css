@@ -1,0 +1,113 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Outfit", sans-serif;
+}
+
+/* HOME */
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.home {
+    height: 100%;
+    background-image: url("Assets/christin-hume-mfB1B1s4sMc-unsplash.jpg");
+    box-shadow: 0 0 0 1000px #151e4731 inset;
+    background-size: 100% 100%;
+}
+
+.titulo-container {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    display: flex;
+    flex-direction: column;
+}
+
+.titulo {
+    font-size: 170px;
+    color: #FFF5E1;
+    font-weight: bold;
+    margin: 25px;
+}
+
+#invierte-container {
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: none;
+    align-items: center;
+    background-color: none;
+}
+
+#invierte-button {
+    font-size: 55px;
+    color: #FFF5E1;
+    background-color: transparent;
+    width: 100%;
+    padding: 10px;
+    margin: 20px;
+    text-align: center;
+    font-weight: bold;
+    border-style: none;
+    border-radius: 5%;
+    text-decoration: none;
+    
+}
+
+
+/* NEWS */
+
+.news {
+    height: 100%;
+}
+
+.news-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    background-color: #FFF5E1;
+    justify-content: space-around;
+}
+
+.news-info {
+    display: flex;
+    border-radius: 20px;
+    background-color: #D9C0A2;
+    margin: 15px;
+}
+
+#date {
+    align-self: flex-start;
+    margin: 10px;
+}
+
+.text-container {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+.logo-container {
+    width: 15%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.logo {
+    width: 100%;
+    margin: 10px;
+}
