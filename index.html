@@ -11,6 +11,7 @@
 <body>
 
     <div class="home" id="page-1">
+        <img class="logo-inicio" src="Assets/logo+banorte+gris.png" alt="">
         <div class="titulo-container">
             <h1 class="titulo-inicio">Mr.</h1>
             <h1 class="titulo-inicio">INVESTOR</h1>
@@ -22,7 +23,7 @@
 
     <div class="about-us" id="page-2">
         <div class="about-us-container">
-            <h1 class="about-us-title">ABOUT US</h1>
+            <h1 id="title" class="about-us-title">ABOUT US</h1>
             <div class="about-text-container">
                 <p class="about-us-text">Our mission is to equip our future clients with the necessary
                     knowledge to design, analyze, and execute a successful investment strategy.</p>
@@ -50,13 +51,13 @@
                     
                 <img class="banorte-logo-login" src="Assets/banortelogo.png" alt="">
                 <div class="login-inputs">
-                    <input type="Username" class="login-info" placeholder="Username">
+                    <input type="Username" class="login-info" id="username" placeholder="Username">
                     <input type="Password" class="login-info" placeholder="Password">
                 </div>
                 
                 <div class="login-buttons">
-                    <button onclick="window.location.href='profile.html';" class="login-button">Login</button>
-                    <button onclick="window.location.href='profile.html'" class="login-button">Sign up</button>
+                    <button onclick="window.location.href='profile.html';" class="login-button" id="login-button">Login</button>
+                    <button onclick="window.location.href='profile.html'" class="login-button" id="login-button">Sign up</button>
                 </div>
             </div>
             <div class="mr">
@@ -67,7 +68,7 @@
         </div>
     </div>
     
-    <script src="investor.js"></script>
+    <script src="home.js"></script>
     
 </body>
 </html>

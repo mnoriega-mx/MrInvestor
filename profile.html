@@ -13,7 +13,7 @@
     <div class="wallet" id="page-3">
         <div class="navbar">
             <ul>
-                <li><a href="#page-1" class="nav-link">PROFILE</a></li>
+                <li><a href="index.html" class="nav-link">HOME</a></li>
                 <li><a href="#page-3" class="nav-link">WALLET</a></li>
                 <li><a href="#page-4" class="nav-link">NEWS</a></li>
                 <li><a href="#page-5" class="nav-link">INVESTOR CENTER</a></li>
@@ -23,8 +23,8 @@
         <div class="wallet-container">
             <div class="perfil">
                 <img src="Assets/User.png" alt="Imagen de perfil">
-                <h2 class="nombre">Nombre</h2>
-                <p class="id">ID: 000000</p>
+                <h2 id="wallet-username" class="nombre">Mauricio1234</h2>
+                <p class="id">ID: 365278</p>
                 <p class="saldo-parametro">$100,000</p>
             </div>
             <div class="container">
@@ -37,10 +37,14 @@
                     <p class="saldo-parametro">$50,000</p>
                 </div>
             </div>
-            <div class="mr-investor-container">
-                <img src="Assets/MrInvestorPregunta.png" alt="Mr. Investor">
-                <h3>¿Necesitas ayuda?</h3>
-                <button id="Boton" onclick="window.location.href = '#page-4'">¡Encuentráme!</button>
+            <div class="fondos-de-inversion-banorte">
+                <h3 class="titulo-fondos">Fondos de inversión Banorte</h3>
+                <a href="https://www.banorte.com/wps/portal/ixe/Home/admininstra-tu-patrimonio/fondos-de-inversion" id="que-es" class="que-es">¿Qué es un fondo de inversión?</a>
+                <p class="titulo-fondo-de-inversion">Populares fondos de inversión Banorte</p>
+                <a href="https://www.banorte.com/cms/banorte/ahorroeInversion/Instrumentosdeinversion/FondosDeInversion/Fondo-Banorte-Cete-(NTECT).pdf" id="fondo-de-inversion1" class="fondo-de-inversion">Fondo Banorte Cete</a>
+                <a href="https://www.banorte.com/cms/banorte/ahorroeInversion/Instrumentosdeinversion/FondosDeInversion/Fondo-Banorte-Digital-(NTEDIG).pdf" id="fondo-de-inversion2" class="fondo-de-inversion">Fondo Banorte Digital</a>
+                <a href="https://www.banorte.com/cms/banorte/ahorroeInversion/Instrumentosdeinversion/FondosDeInversion/Fondo-Banorte-Plazo-(NTEPZO).pdf" id="fondo-de-inversion3" class="fondo-de-inversion">Fondo Banorte Plazo</a>
+                <a href="https://www.banorte.com/cms/banorte/ahorroeInversion/Instrumentosdeinversion/FondosDeInversion/Fondo-Banorte-Dolares-(NTEDLS).pdf" id="fondo-de-inversion3" class="fondo-de-inversion">Fondo Banorte Dólares</a>
             </div>
         </div>
 
@@ -51,7 +55,7 @@
         
         <div class="navbar">
             <ul>
-                <li><a href="#page-1" class="nav-link">PROFILE</a></li>
+                <li><a href="index.html" class="nav-link">HOME</a></li>
                 <li><a href="#page-3" class="nav-link">WALLET</a></li>
                 <li><a href="#page-4" class="nav-link">NEWS</a></li>
                 <li><a href="#page-5" class="nav-link">INVESTOR CENTER</a></li>
@@ -63,7 +67,7 @@
                 <div class="text-container">
                     <p id="date">23|09|2023</p>
                     <p class="insights"><strong>Recientemente el SP500 ha pérdido un 5% de su valor</strong></p>
-                    <a href="https://www.marketwatch.com/story/s-p-500-futures-point-higher-for-first-time-since-feds-higher-for-longer-message-585c58f8">Read more</a>
+                    <a href="https://www.marketwatch.com/story/s-p-500-futures-point-higher-for-first-time-since-feds-higher-for-longer-message-585c58f8">Conoce más</a>
                 </div>
                 <div class="logo-container">
                     <img class="logo" src="Assets/Logo.png" alt="">
@@ -74,7 +78,7 @@
                 <div class="text-container">
                     <p id="date">23|09|2023</p>
                     <p class="insights"><strong>Afore XXI Banorte, primer lugar en rendimientos en 2023</strong></p>
-                    <a href="https://www.eleconomista.com.mx/sectorfinanciero/Afore-XXI-Banorte-primer-lugar-en-rendimientos-en-2023-es-reconocida-por-World-Finance-como-el-mejor-fondo-de-pensiones-de-Mexico-20230802-0074.html">Read more</a>
+                    <a href="https://www.eleconomista.com.mx/sectorfinanciero/Afore-XXI-Banorte-primer-lugar-en-rendimientos-en-2023-es-reconocida-por-World-Finance-como-el-mejor-fondo-de-pensiones-de-Mexico-20230802-0074.html">Conoce más</a>
                 </div>
                 <div class="logo-container">
                     <img class="logo" src="Assets/Logo.png" alt="">
@@ -85,7 +89,7 @@
                 <div class="text-container">
                     <p id="date">23|09|2023</p>
                     <p class="insights"><strong>Morningstar reconoce a Valmex y Banorte</strong></p>
-                    <a href="https://www.eleconomista.com.mx/sectorfinanciero/Morningstar-reconoce-a-Valmex-y-Banorte-20230302-0087.html">Read more</a>
+                    <a href="https://www.eleconomista.com.mx/sectorfinanciero/Morningstar-reconoce-a-Valmex-y-Banorte-20230302-0087.html">Conoce más</a>
                 </div>
                 <div class="logo-container">
                     <img class="logo" src="Assets/Logo.png" alt="">
@@ -97,24 +101,26 @@
     <div class="investor-center" id="page-5">
         <div class="navbar">
             <ul>
-                <li><a href="#page-1" class="nav-link">PROFILE</a></li>
+                <li><a href="index.html" class="nav-link">HOME</a></li>
                 <li><a href="#page-3" class="nav-link">WALLET</a></li>
                 <li><a href="#page-4" class="nav-link">NEWS</a></li>
                 <li><a href="#page-5" class="nav-link">INVESTOR CENTER</a></li>
             </ul>
         </div>
         <div class="investor-container">
-            <div class="chatbot">
-                
+            <div class="mr-investor-container">
+                <img src="Assets/MrInvestorPregunta.png" alt="Mr. Investor">
+                <h3>¿Necesitas ayuda?</h3>
+                <button id="Boton" target="_blank" onclick="window.location.href = 'http://10.22.180.111:3000/chat'">¡Encuentráme!</button>
             </div>
 
             <div class="courses-container">
-                <p class="titulo-courses">----COURSES---</p>
+                <p class="titulo-courses">----CURSOS---</p>
                 
                 <div class="barra">
                     <div class="barra-fill"></div>
                 </div>
-                <p id="porcentaje">55% COMPLETED</p>
+                <p id="porcentaje">55% COMPLETADO</p>
                 <div class="mini-courses">   
                     <div class="courses">
                         <p class="parrafo-minicourses"><br> WHEN <br> TO <br> SELL</p>
@@ -129,14 +135,26 @@
                         <img src="Assets/Estrellas-3.png" alt="Estrellas">
                     </div>
                 </div> 
-                <a href="#page-5" class="link-courses">SEE ALL COURSES</a>
+                <a href="#page-5" class="link-courses">ALL COURSES</a>
             </div>
         </div>
     </div>
 
 
     
-    <script src="investor.js"></script>
+    <script>
+
+        let loginButton = document.getElementById("login-button");
+        loginButton.addEventListener("click", login);
+        let username = document.getElementById("username").value;
+
+        let walletUsername = document.getElementById("wallet-username");
+
+        function login() {
+            walletUsername.innerHTML = username;
+        }
+
+    </script>
     
 </body>
 </html>
