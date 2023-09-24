@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <title>My Website</title>
+</head>
+
+<body>
+
+    <div class="wallet" id="page-3">
+        <div class="navbar">
+            <ul>
+                <li><a href="#page-1" class="nav-link">PROFILE</a></li>
+                <li><a href="#page-3" class="nav-link">WALLET</a></li>
+                <li><a href="#page-4" class="nav-link">NEWS</a></li>
+                <li><a href="#page-5" class="nav-link">INVESTOR CENTER</a></li>
+            </ul>
+        </div>
+
+        <div class="wallet-container">
+            <div class="perfil">
+                <img src="Assets/User.png" alt="Imagen de perfil">
+                <h2 class="nombre">Nombre</h2>
+                <p class="id">ID: 000000</p>
+                <p class="saldo-parametro">$100,000</p>
+            </div>
+            <div class="container">
+                <div class="wallet-inversiones">
+                    <h3 class="titulo-contenedor">Wallet</h3>
+                    <p class="saldo-parametro">$50,000</p>
+                </div>
+                <div class="wallet-inversiones">
+                    <h3 class="titulo-contenedor">Inversión</h3>
+                    <p class="saldo-parametro">$50,000</p>
+                </div>
+            </div>
+            <div class="mr-investor-container">
+                <img src="Assets/MrInvestorPregunta.png" alt="Mr. Investor">
+                <h3>¿Necesitas ayuda?</h3>
+                <button id="Boton" onclick="window.location.href = '#page-4'">¡Encuentráme!</button>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div class="news" id="page-4">
+        
+        <div class="navbar">
+            <ul>
+                <li><a href="#page-1" class="nav-link">PROFILE</a></li>
+                <li><a href="#page-3" class="nav-link">WALLET</a></li>
+                <li><a href="#page-4" class="nav-link">NEWS</a></li>
+                <li><a href="#page-5" class="nav-link">INVESTOR CENTER</a></li>
+            </ul>
+        </div>
+
+        <div class="news-container">
+            <div class="news-info">
+                <div class="text-container">
+                    <p id="date">23|09|2023</p>
+                    <p class="insights"><strong>Recientemente el SP500 ha pérdido un 5% de su valor</strong></p>
+                    <a href="https://www.marketwatch.com/story/s-p-500-futures-point-higher-for-first-time-since-feds-higher-for-longer-message-585c58f8">Read more</a>
+                </div>
+                <div class="logo-container">
+                    <img class="logo" src="Assets/Logo.png" alt="">
+                </div>
+            </div>
+            
+            <div class="news-info">
+                <div class="text-container">
+                    <p id="date">23|09|2023</p>
+                    <p class="insights"><strong>Afore XXI Banorte, primer lugar en rendimientos en 2023</strong></p>
+                    <a href="https://www.eleconomista.com.mx/sectorfinanciero/Afore-XXI-Banorte-primer-lugar-en-rendimientos-en-2023-es-reconocida-por-World-Finance-como-el-mejor-fondo-de-pensiones-de-Mexico-20230802-0074.html">Read more</a>
+                </div>
+                <div class="logo-container">
+                    <img class="logo" src="Assets/Logo.png" alt="">
+                </div>
+            </div>
+            
+            <div class="news-info">
+                <div class="text-container">
+                    <p id="date">23|09|2023</p>
+                    <p class="insights"><strong>Morningstar reconoce a Valmex y Banorte</strong></p>
+                    <a href="https://www.eleconomista.com.mx/sectorfinanciero/Morningstar-reconoce-a-Valmex-y-Banorte-20230302-0087.html">Read more</a>
+                </div>
+                <div class="logo-container">
+                    <img class="logo" src="Assets/Logo.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="investor-center" id="page-5">
+        <div class="navbar">
+            <ul>
+                <li><a href="#page-1" class="nav-link">PROFILE</a></li>
+                <li><a href="#page-3" class="nav-link">WALLET</a></li>
+                <li><a href="#page-4" class="nav-link">NEWS</a></li>
+                <li><a href="#page-5" class="nav-link">INVESTOR CENTER</a></li>
+            </ul>
+        </div>
+        <div class="investor-container">
+            <div class="chatbot">
+                
+            </div>
+
+            <div class="courses-container">
+                <p class="titulo-courses">----COURSES---</p>
+                
+                <div class="barra">
+                    <div class="barra-fill"></div>
+                </div>
+                <p id="porcentaje">55% COMPLETED</p>
+                <div class="mini-courses">   
+                    <div class="courses">
+                        <p class="parrafo-minicourses"><br> WHEN <br> TO <br> SELL</p>
+                        <img src="Assets/Estrellas-1.png" alt="Estrellas">
+                    </div>
+                    <div class="courses">
+                        <p class="parrafo-minicourses"><br> BUY <br> & <br> HOLD</p>
+                        <img src="Assets/Estrellas-2.png" alt="Estrellas">
+                    </div>
+                    <div class="courses">
+                        <p class="parrafo-minicourses"><br> BUY <br> & <br> SELL</p>
+                        <img src="Assets/Estrellas-3.png" alt="Estrellas">
+                    </div>
+                </div> 
+                <a href="#page-5" class="link-courses">SEE ALL COURSES</a>
+            </div>
+        </div>
+    </div>
+
+
+    
+    <script src="investor.js"></script>
+    
+</body>
+</html>

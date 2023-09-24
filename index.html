@@ -1,69 +1,72 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <title>My Website</title>
-</head> 
+</head>
+
 <body>
-    <div class="home" id="#page-1">
+
+    <div class="home" id="page-1">
         <div class="titulo-container">
-            <h1 class="titulo">Mr.</h1>
-            <h1 class="titulo">INVESTOR</h1>
+            <h1 class="titulo-inicio">Mr.</h1>
+            <h1 class="titulo-inicio">INVESTOR</h1>
         </div>
         <div id="invierte-container">
-            <button id="invierte-button">⇓</button>
+            <button onclick="window.location.href='#page-2';" id="invierte-button">⇓</button>
         </div>
     </div>
 
-    <div class="news" id="#page-2">
-        
-        <div class="navbar">
-            <ul>
-                <li><a href="home.html" class="nav-link">HOME</a></li>
-                <li><a href="wallet.html" class="nav-link-active">WALLET</a></li>
-                <li><a href="news.html" class="nav-link">NEWS</a></li>
-                <li><a href="investor.html" class="nav-link">INVESTOR CENTER</a></li>
-            </ul>
+    <div class="about-us" id="page-2">
+        <div class="about-us-container">
+            <h1 class="about-us-title">ABOUT US</h1>
+            <div class="about-text-container">
+                <p class="about-us-text">Our mission is to equip our future clients with the necessary
+                    knowledge to design, analyze, and execute a successful investment strategy.</p>
+                <p class="about-us-text"> Thanks to our cutting-edge software, we are able to introduce you to our 'Mr. Investor.' 
+                   Through the use of machine learning and other methods, we have been able to train a financial coach whose foundation 
+                   lies in artificial intelligence. We offer courses, practice sessions, and financial articles with the aim of sharpening
+                    our clients' skills as investors.</p>
+            </div>
         </div>
-
-        <div class="news-container">
-            <div class="news-info">
-                <div class="text-container">
-                    <p id="date">23|09|2023</p>
-                    <p>Recently the SP500 has lost over 5.00% of it’s value !</p>
-                    <a href="https://www.marketwatch.com/story/s-p-500-futures-point-higher-for-first-time-since-feds-higher-for-longer-message-585c58f8">Read more</a>
-                </div>
-                <div class="logo-container">
-                    <img class="logo" src="Assets/mrinvestorlogo.jpeg" alt="">
-                </div>
+        <div class="start">
+            <div class="join-container">
+                <a href="#page-3" class="join">START YOUR JOURNEY</a>
+                <img src="Assets/Logo.png" alt="">
             </div>
-            <div class="news-info">
-                <div class="text-container">
-                    <p id="date">23|09|2023</p>
-                    <p>Recently the SP500 has lost over 5.00% of it’s value !</p>
-                    <a href="https://www.marketwatch.com/story/s-p-500-futures-point-higher-for-first-time-since-feds-higher-for-longer-message-585c58f8">Read more</a>
-                </div>
-                <div class="logo-container">
-                    <img class="logo" src="Assets/mrinvestorlogo.jpeg" alt="">
-                </div>
-            </div>
-            <div class="news-info">
-                <div class="text-container">
-                    <p id="date">23|09|2023</p>
-                    <p>Recently the SP500 has lost over 5.00% of it’s value !</p>
-                    <a href="https://www.marketwatch.com/story/s-p-500-futures-point-higher-for-first-time-since-feds-higher-for-longer-message-585c58f8">Read more</a>
-                </div>
-                <div class="logo-container">
-                    <img class="logo" src="Assets/mrinvestorlogo.jpeg" alt="">
-                </div>
-            </div>
+        </div>
+        <div class="logos">
+            <img class="banorte-logo" src="Assets/banortelogo.png" alt="">
         </div>
     </div>
 
+    <div class="login" id="page-3">
+        <div class="login-container">
+            <div class="info">
 
+                    
+                <img class="banorte-logo-login" src="Assets/banortelogo.png" alt="">
+                <div class="login-inputs">
+                    <input type="Username" class="login-info" placeholder="Username">
+                    <input type="Password" class="login-info" placeholder="Password">
+                </div>
+                
+                <div class="login-buttons">
+                    <button onclick="window.location.href='profile.html';" class="login-button">Login</button>
+                    <button onclick="window.location.href='profile.html'" class="login-button">Sign up</button>
+                </div>
+            </div>
+            <div class="mr">
 
+                <img class="mr-investor" src="Assets/MrInvestor.png" alt="">
+
+            </div>
+        </div>
+    </div>
+    
     <script src="investor.js"></script>
     
 </body>

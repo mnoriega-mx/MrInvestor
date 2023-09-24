@@ -10,13 +10,16 @@ body, html {
     height: 100%;
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
+
 
 .home {
     height: 100%;
     background-image: url("Assets/christin-hume-mfB1B1s4sMc-unsplash.jpg");
     box-shadow: 0 0 0 1000px #151e4731 inset;
     background-size: 100% 100%;
+    transition: width 2s linear 1s;
 }
 
 .titulo-container {
@@ -27,11 +30,12 @@ body, html {
     flex-direction: column;
 }
 
-.titulo {
+.titulo-inicio {
     font-size: 170px;
     color: #FFF5E1;
     font-weight: bold;
     margin: 25px;
+    transition: width 2s linear 1s;
 }
 
 #invierte-container {
@@ -58,26 +62,209 @@ body, html {
     border-style: none;
     border-radius: 5%;
     text-decoration: none;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
     
 }
 
+/* ABOUT US */
 
-/* NEWS */
-
-.news {
+.about-us {
     height: 100%;
+    background-color: #FFF5E1;
 }
 
+.about-us-container {
+    height: 65%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.about-us-title {
+    font-size: 90px;
+    width: 80%;
+    font-weight: bold;
+    color: #151E47;
+    text-align: center;
+    text-align: justify;
+}
+
+.about-text-container {
+    background-color: #D9C0A2;
+    padding: 15px;
+    width: 100%;
+}
+
+.about-us-text {
+    font-size: 25px;
+    width: 80%;
+    font-weight: bold;
+    color: #151E47;
+    text-align: center;
+    text-align: justify;
+    background-color: #D9C0A2;
+    border-radius: 23px;
+    padding: 30px;
+}
+
+.start {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.join-container {
+    display: flex;
+    width: 40%;
+    background-color: #151E47;
+    border-radius: 23px;
+    padding: 5px;
+    margin-bottom: 33px;
+}
+
+.join-container img {
+    width: 100px;
+}
+
+.join {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 35px;
+    width: 100%;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.logos {
+    display: flex;
+    border: 2px solid #BB2624;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 15%;
+}
+
+.banorte-logo {
+    width: 500px;
+}
+
+.logos p {
+    font-size: 20px;
+    font-weight: bold;
+    color: #BB2624;
+    text-align: center;
+    text-align: justify;
+    width: 80%;
+    border-right: 2px solid #BB2624;
+}
+
+/* LOGIN */
+
+.login {
+    height: 100%;
+    background-color: #FFF5E1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    height: 70%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info {
+    width: 55%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+.banorte-logo-login {
+    height: 60px;
+}
+
+.login-inputs {
+    width: 100%;
+    height: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.login-info {
+    width: 100%;
+    height: 30%;
+    margin: 10px;
+    background-color: #D9C0A2;
+    border-radius: 23px;
+    border: 3px solid #151E47;
+    font-size: 30px;
+    color: #151E47;
+    padding: 10px;
+}
+
+.login-buttons {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+}
+
+.login-button {
+    background-color: #BB2624;
+    color: white;
+    width: 40%;
+    height: 100%;
+    border-radius: 23px;
+    border-style: none;
+}
+
+.mr {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mr-investor {
+    width: 100%;
+    background-color: #D9C0A2;
+    border-radius: 23px;
+}
+
+
+
+
+/* NAVBAR */
+
 .navbar {
-    background-color: beige;
-    border-bottom: 5px solid #BB2624;
+    background-color: #FFF5E1;
+    border-bottom: 3px solid #BB2624;
+    height: 10%;
+    width: 100%;
 }
 
 .navbar ul {
     list-style: none;
     padding: 0;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
 }
 
 .navbar .nav-link {
@@ -94,20 +281,164 @@ body, html {
     font-weight: bold;
 }
 
+/* WALLET */
+
+.wallet {
+    height: 100%;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.wallet-container {
+    height: 90%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #FFF5E1;
+}
+
+.perfil {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 35%;
+    background-color: #D9C0A2;
+    padding: 20px;
+    border-radius: 23px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    height: 90%;
+}
+
+.perfil img {
+    width: 250px;
+    border-radius: 40%;
+    align-self: center;
+}
+
+.nombre {
+    font-size: 50px;
+    font-weight: bold;
+    color: #BB2624;
+    text-align: center;
+    margin: 10px;
+}
+
+.id {
+    font-size: 20px;
+    font-weight: bold;
+    color: #BB2624;
+    text-align: center;
+    margin: 10px;
+}
+
+.saldo-parametro {
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #BB2624;
+    padding: 20px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    border-radius: 23px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #D9C0A2;
+    width: 25%;
+    height: 90%;
+    border-radius: 23px;
+}
+
+.wallet-inversiones{
+    display: flex;
+    flex-direction: column;
+    background-color: #D9C0A2;
+    border-radius: 23px;
+    margin: 20px;
+}
+
+.titulo-contenedor {
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.parametro {
+    border: none;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #BB2624;
+    color: white;
+    text-align: center;
+    border-radius: 23px;
+}
+
+.mr-investor-container{
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    height: 90%;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: #D9C0A2;
+    color: #BB2624;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 23px;
+}
+
+.mr-investor-container img{
+    width: 250px;
+    border-radius: 40%;
+    align-self: center;
+}
+
+#Boton {
+    background-color: #151E47;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 23px;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    width: 90%;
+}
+
+
+
+/* NEWS */
+
+.news {
+    height: 100%;
+    background-color: #FFF5E1;
+
+}
+
 .news-container {
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 80%;
-    background-color: #FFF5E1;
+    height: 90%;
     justify-content: space-around;
+    align-items: center;
 }
 
 .news-info {
+    width: 90%;
     display: flex;
     border-radius: 20px;
-    background-color: #EADBC8;
-    margin: 15px;
+    background-color: #D9C0A2;
+    margin: 10px;
 }
 
 #date {
@@ -115,24 +446,34 @@ body, html {
     margin: 10px;
 }
 
+.insights {
+    font-size: 35px;
+}
+
 .text-container {
     display: flex;
     flex-direction: column;
-    width: 95%;
+    width: 90%;
     justify-content: space-around;
     align-items: center;
     color: white;
     font-size: 30px;
     text-decoration: none;
     margin: 15px;
+    color: #151E47;
 }
 
 .text-container a {
     margin: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #151E47;
+    padding: 10px;
+    border-radius: 23px;
 }
 
 .logo-container {
-    width: 5%;
+    width: 10%;
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
@@ -140,5 +481,127 @@ body, html {
 
 .logo {
     width: 100%;
+    margin: 10px;
+}
+
+/*Investor Center*/
+
+.investor-center{
+    height: 100%;
+    transition: all .5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.investor-container {
+    height: 90%;
+    display: flex;
+    align-items: center;
+    background-color: #FFF5E1;
+    justify-content: space-evenly;
+}
+
+.chatbot{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 90%;
+    width: 45%;
+    background-color: #D9C0A2;
+    border-radius: 23px;
+}
+
+.courses-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90%;
+    width: 45%;
+    border-radius: 23px;
+    justify-content: space-evenly;
+}
+
+.titulo-courses{
+    font-size: 50px;
+    font-weight: bold;
+    color: #BB2624;
+    text-align: center;
+    margin: 10px;
+}
+
+.barra {
+    width: 90%;
+    height: 30px;
+    background-color: #D9C0A2;
+    position: relative;
+    border-radius: 23px;
+    border: 3px solid #D9C0A2;
+  }
+
+  .barra-fill {
+    width: 60%;
+    height: 25px;
+    background-color: #BB2624;
+    position: relative;
+    border-radius: 23px;
+    border: 3px solid #D9C0A2;
+  }
+  
+  #porcentaje {
+    display: block;
+    text-align: center;
+    line-height: 30px;
+    color: #BB2624;
+    width: 15;
+    transition: width 0.5s ease-in-out;
+    font-weight: bold;
+    font-size: x-large;
+  }
+
+  .mini-courses{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 40%;
+    width: 90%;
+  }
+
+  .courses{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 23px;
+    width: 25%;
+    border: 3px solid beige;
+    background-color: #D9C0A2;
+    justify-content: space-evenly;
+  }
+
+  .titulo-mini-courses{
+    font-size: 20px;
+    font-weight: bold;
+    color: #BB2624;
+    text-align: center;
+    margin: 10px;
+}
+ 
+.parrafo-minicourses{
+    font-size: 20px;
+    font-weight: bold;
+    color: #151E47;
+    text-align: center;
+    margin: 10px;
+}
+
+.courses img{
+    width: 100px;
+    border-radius: 10%;
+    align-self: center;
+    justify-content: center;
+}
+
+.link-courses{
+    font-size: 20px;
+    color: #151E47;
+    text-align: center;
     margin: 10px;
 }
